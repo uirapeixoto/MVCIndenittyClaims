@@ -1,0 +1,7 @@
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\bin\Debug\AppConsole.exe.config
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\bin\Debug\AppConsole.exe
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\bin\Debug\AppConsole.pdb
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\obj\Debug\AppConsole.csprojResolveAssemblyReference.cache
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\obj\Debug\AppConsole.csproj.CoreCompileInputs.cache
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\obj\Debug\AppConsole.exe
+H:\desenvolvimento\c#\ProjetoClaims\AppConsole\obj\Debug\AppConsole.pdb

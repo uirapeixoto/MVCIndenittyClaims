@@ -3,7 +3,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -45,6 +48,20 @@ namespace UI.Controllers
 
             if (user != null)
                 await appAsign.SignInAsync(user, true, true);
+
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult VerificaClaims()
+        {
+            ClaimsPrincipal currentPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
+            var claims = new Dictionary<string, string>();
+
+            foreach (Claim ci in currentPrincipal.Claims)
+                claims.Add(Guid.NewGuid().ToString(), ci.Value);
+
+            ViewBag.Claims = claims;
 
             return View();
         }

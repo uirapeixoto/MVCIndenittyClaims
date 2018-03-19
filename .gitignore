@@ -4,3 +4,5 @@
 
 /.vs
 /packages
+/UI/bin
+/UI/obj/Release/Package/PackageTmp/bin
